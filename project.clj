@@ -1,4 +1,4 @@
-(defproject kanwei/one-time "0.7.0"
+(defproject kanwei/one-time "0.7.1"
   :author "Suvash Thapaliya"
   :description "One Time Password (TOTP and HOTP) library for Clojure. TOTP/HOTP is widely used for Two factor / Multi Factor Authentication."
   :url "http://github.com/suvash/one-time"
@@ -9,8 +9,8 @@
                         ["snapshots" {:sign-releases false :url "https://clojars.org"}]]
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [commons-codec "1.11"]
-                 [ring/ring-codec "1.1.1"]
+                 [commons-codec "1.13"]
+                 [ring/ring-codec "1.1.2"]
                  [io.nayuki/qrcodegen "1.5.0"]]
   :profiles {:dev    {:plugins [[lein-cloverage "1.0.13"]
                                 [lein-codox "0.10.6"]]}
