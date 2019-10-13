@@ -1,4 +1,4 @@
-(defproject one-time "0.6.0-SNAPSHOT"
+(defproject one-time "0.7.0"
   :author "Suvash Thapaliya"
   :description "One Time Password (TOTP and HOTP) library for Clojure. TOTP/HOTP is widely used for Two factor / Multi Factor Authentication."
   :url "http://github.com/suvash/one-time"
@@ -8,7 +8,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [commons-codec "1.11"]
                  [ring/ring-codec "1.1.1"]
-                 [com.github.kenglxn.qrgen/javase "2.5.0"]]
+                 [io.nayuki/qrcodegen "1.5.0"]]
   :profiles {:dev {:plugins      [[lein-cloverage "1.0.13"]
                                   [lein-codox "0.10.6"]]}
              :1.6 {:dependencies [[org.clojure/clojure "1.6.0"]]}
@@ -20,7 +20,7 @@
   :codox {:output-path "docs"
           :doc-files ["README.md"]
           :source-uri "https://github.com/suvash/one-time/blob/v{version}/{filepath}#L{line}"}
-  :repositories {"jitpack" "https://jitpack.io"
+  #_ #_ :repositories {"jitpack" "https://jitpack.io"
                  "sonatype" {:url "https://oss.sonatype.org/content/repositories/releases"
                              :snapshots false
                              :releases {:checksum :fail :update :always}}
